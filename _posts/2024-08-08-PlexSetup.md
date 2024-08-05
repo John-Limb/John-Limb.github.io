@@ -74,7 +74,7 @@ sudo mkdir /opt/dockge
 * Start Plex  
 `sudo systemctl start plexmediaserver`
 * Enable plex   
-` sudo systemctl start plexmediaserver`
+` sudo systemctl enable plexmediaserver`
 
 Now you can go to server IP on port 32400 and configure plex.   
 You can stop here if you don't want to add any further customisations or monitoring to plex. 
@@ -159,7 +159,7 @@ services:
     image: kometateam/kometa
 networks: {}
  ```
-Hit save and start, it should start up but error out. - This it to be expected.  Stop and invalidate the container.  
+Hit save and start, it should start up but error out. - This is to be expected.  Stop and invalidate the container.  
 On your server, change into the following directory 
 `cd /opt/stacks/kometa/`  
 you can then download the config template into the folder.  
@@ -179,15 +179,12 @@ plex:                                           # Can be individually specified 
 ```
 Change bing band boing to your plex URL and port IE. `http://xxx.yyy.xxx.xxx:32400`
 
-You will now want to get an API key for TMDB and pasting that in.
+You will now want to get an API key for TMDB and paste that in.
 
 Scroll back up to the top of the file and change The collection_files section. Default from basic to franchise.  
 and change the overlay_files section from ribon to resolution.
 ![KometaConfig](/assets/img/kometa-config.png)
-
-
+ 
 ---
----
-
-
-end
+That should be it, Kometa should be up and running and organising plex for you!
+I would now advise setting up image maid to keep your library clean and optimised! 
