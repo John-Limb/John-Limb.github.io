@@ -28,6 +28,14 @@ We are going to be setting up plex on a bare metal device, this can also be done
 6. Hit "Done" and then "continue" you will then be asked to give your server a name and enter usernames and passwords.
    Skip the ubuntu pro install, and then install OpenSSH Server so we can access later. - Hit done on the next two prompts and start the install
 
+### Time to do some updates and create directories
+1. Once the install is complete, Reboot and remove the CD or USB install media. 
+2. You should now either be at the desktop or at a terminal window, depending on what OS you went for.
+3. Run the following to update apt packages etc..
+```shell
+sudo apt update && sudo apt upgrade -y
+```
+
 ---
 
 end
