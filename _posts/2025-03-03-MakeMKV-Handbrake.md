@@ -55,7 +55,7 @@ Head to the Video tab and set the following:
  ``` strong-intra-smoothing=0:rect=0:aq-mode=1:rd=4:psy-rd=0.75:psy-rdoq=4.0:rdoq-level=1:rskip=2 ```
 
 Now head to the audio tab:
-![handbrake-audio](/assets/img/handbrake-audio.png)
+![handbrake-audio](/assets/img/handbrake-Audio.png)
 Press the tracks button and then Add all remaining tracks. Then set the codec as passthru - This retains the original audio tracks and does not convert them.  
 Leave subtitles and chapters as they are. Unless you want to remove them.  
 Save the preset and name it what you want.
